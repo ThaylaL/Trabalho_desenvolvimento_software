@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+     <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th colspan="5">
+                    <h1>T.Lirio</h1>
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><a href="#">Home</a></td>
+                <td><a href="curriculo.html">Currículo</a></td>
+                <td><a href="github.html">Github</a></td>
+                <td><a href="servico.html">Serviços</a></td>
+                <td><a href="contato.html">Contato</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br><br>
+    <form action="#" method="POST">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Formulário de Solicitação de Orçamento</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="nome">Nome completo:</label><br>
+                        <input type="text" id="nome" name="nome" required size="40">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email" required size="40">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="telefone">Telefone / WhatsApp:</label><br>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(00) 0 0000-0000">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="tipo_negocio">Tipo de negócio:</label><br>
+                        <input type="text" id="tipo_negocio" name="tipo_negocio" placeholder="Ex: restaurante, academia...">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <hr>
+
+                        <p><strong>Tipo de site desejado:</strong></p>
+
+                        <input type="radio" id="estatico" name="tipo_site" value="estatico">
+                        <label for="estatico">Estático</label><br>
+
+                        <input type="radio" id="dinamico" name="tipo_site" value="dinamico">
+                        <label for="dinamico">Dinâmico</label><br>
+
+                        <input type="radio" id="ecommerce" name="tipo_site" value="ecommerce">
+                        <label for="ecommerce">E-commerce</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="paginas">Quantidade aproximada de páginas:</label><br>
+                        <input type="number" id="paginas" name="paginas" min="1">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <hr>
+
+                        <p><strong>Funcionalidades extras necessárias:</strong></p>
+
+                        <input type="checkbox" id="agendamento" name="func[]" value="agendamento">
+                        <label for="agendamento">Agendamento</label><br>
+
+                        <input type="checkbox" id="blog" name="func[]" value="blog">
+                        <label for="blog">Blog</label><br>
+
+                        <input type="checkbox" id="contato" name="func[]" value="contato">
+                        <label for="contato">Formulário de contato</label><br>
+
+                        <input type="checkbox" id="catalogo" name="func[]" value="catalogo">
+                        <label for="catalogo">Catálogo de produtos</label><br>
+
+                        <input type="checkbox" id="painel" name="func[]" value="painel">
+                        <label for="painel">Painel administrativo</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="referencia">Referência de site que gosta (opcional):</label><br>
+                        <input type="url" id="referencia" name="referencia" placeholder="http://">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="prazo">Prazo desejado:</label><br>
+                        <input type="text" id="prazo" name="prazo">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center">
+                        <button type="submit">Enviar Solicitação</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+</body>
+</html>
